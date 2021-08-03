@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-nft.js"></script>
 
 <style>
@@ -43,7 +43,7 @@
     <a-nft
       type="nft"
       emitevents="true"
-      url="./Data/clab_tag"
+      url="/Data/clab_tag"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
@@ -51,7 +51,7 @@
     >
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
         <a-entity
-            gltf-model="./Data/model.glb"
+            gltf-model="/Data/model.glb"
             scale="5 5 5"
             position="50 150 0"
         >
